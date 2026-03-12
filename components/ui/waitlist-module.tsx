@@ -11,7 +11,7 @@ export function WaitlistModule() {
       <form className="mt-5 grid gap-3 sm:grid-cols-[1fr_auto]">
         <input
           type="email"
-          placeholder="you@company.com"
+          placeholder="contact@hyroglyphx.com"
           className="h-11 rounded-full border border-line bg-[#0c1219] px-4 text-sm text-text outline-none transition focus:border-accent/60"
           aria-label="Waitlist email"
         />
