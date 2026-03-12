@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  border-color: theme("colors.line");
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Aptos", "Bahnschrift", "Trebuchet MS", "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Orbitron", "Rajdhani", "Agency FB", "Bahnschrift", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+::selection {
+  background: rgba(93, 212, 241, 0.2);
+  color: #f7fdff;
+}
+
+@layer utilities {
+  .section-shell {
+    @apply mx-auto max-w-7xl px-4 md:px-8;
+  }
+
+  .metal-divider {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-line to-transparent;
+  }
+}
