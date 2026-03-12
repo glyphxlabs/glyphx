@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { socialLinks } from "@/data/site";
 
@@ -6,7 +7,13 @@ export function Footer() {
     <footer className="mt-24 border-t border-line bg-[#06090d]">
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-3 md:px-8">
         <div>
-          <p className="text-base font-semibold text-text">HyroGlyphX</p>
+          <Image
+            src="/brand/hyroglyphx-logo-lockup.png"
+            alt="HyroGlyphX logo"
+            width={926}
+            height={221}
+            className="h-11 w-auto object-contain object-left"
+          />
           <p className="mt-2 max-w-sm text-sm text-textMuted">
             Building the adaptive keyboard platform where premium hardware and intelligent software converge.
           </p>

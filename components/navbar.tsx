@@ -17,18 +17,27 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-line/80 bg-[#06090dcc]/95 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 md:px-8">
         <Link href="/" className="flex items-center gap-3" aria-label="HyroGlyphX home">
-          <div className="grid h-9 w-9 place-items-center rounded-xl border border-line bg-[#0a1119] shadow-metal">
+          <div className="grid h-10 w-10 place-items-center rounded-2xl border border-line bg-[#0a1119] shadow-metal">
             <Image
-              src="/images/hyroglyphx-symbol.svg"
-              alt="HyroGlyphX symbol"
-              width={22}
-              height={22}
-              className="h-5 w-5"
+              src="/brand/hyroglyphx-logo-icon.png"
+              alt="HyroGlyphX icon"
+              width={64}
+              height={64}
+              className="h-7 w-7 object-contain"
             />
           </div>
-          <div>
-            <p className="text-sm font-semibold tracking-[0.1em] text-text">HyroGlyphX</p>
-            <p className="text-[11px] uppercase tracking-[0.12em] text-textMuted">Adaptive Input Systems</p>
+          <div className="space-y-1">
+            <Image
+              src="/brand/hyroglyphx-logo-wordmark.png"
+              alt="HyroGlyphX"
+              width={360}
+              height={86}
+              className="h-6 w-auto object-contain object-left md:h-7"
+              priority
+            />
+            <p className="text-[10px] uppercase tracking-[0.18em] text-textMuted md:text-[11px]">
+              Adaptive Input Systems
+            </p>
           </div>
         </Link>
 

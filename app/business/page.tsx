@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { MetricCard } from "@/components/ui/metric-card";
 import { DashboardPanel } from "@/components/ui/dashboard-panel";
@@ -7,6 +8,34 @@ import { StatusBadge } from "@/components/ui/status-badge";
 export default function BusinessPage() {
   return (
     <div className="section-shell space-y-14 pb-12 pt-14 md:pt-16">
+      <section className="rounded-[1.75rem] border border-line bg-[linear-gradient(180deg,rgba(18,24,33,0.92),rgba(8,12,17,0.98))] p-6 shadow-panel">
+        <div className="grid gap-6 lg:grid-cols-[1fr_auto] lg:items-center">
+          <div>
+            <p className="text-xs uppercase tracking-[0.18em] text-accent">Executive Surface</p>
+            <Image
+              src="/brand/hyroglyphx-logo-lockup.png"
+              alt="HyroGlyphX logo"
+              width={926}
+              height={221}
+              className="mt-3 h-11 w-auto object-contain object-left md:h-14"
+            />
+            <p className="mt-4 max-w-2xl text-sm leading-relaxed text-textMuted">
+              HyroGlyphX is positioned as a premium adaptive input company with defensible industrial design, software
+              attach revenue, and ecosystem-level expansion potential.
+            </p>
+          </div>
+          <div className="rounded-2xl border border-line bg-[#0a1117] p-4 shadow-metal">
+            <Image
+              src="/brand/hyroglyphx-logo-icon.png"
+              alt="HyroGlyphX icon"
+              width={128}
+              height={128}
+              className="h-16 w-16 object-contain"
+            />
+          </div>
+        </div>
+      </section>
+
       <section className="space-y-6">
         <SectionHeading
           eyebrow="Business / Investor View"

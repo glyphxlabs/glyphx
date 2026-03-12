@@ -18,7 +18,7 @@ export function SectionHeading({
   return (
     <div className={cn("space-y-4", align === "center" && "mx-auto max-w-3xl text-center", className)}>
       {eyebrow && (
-        <p className="inline-flex items-center rounded-full border border-line bg-panel/70 px-3 py-1 text-xs uppercase tracking-[0.18em] text-accent">
+        <p className="inline-flex items-center rounded-full border border-accent/20 bg-[linear-gradient(180deg,rgba(8,20,24,0.92),rgba(9,15,20,0.95))] px-3 py-1 text-xs uppercase tracking-[0.18em] text-accent shadow-glow">
           {eyebrow}
         </p>
       )}

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { ArrowRight, Cpu, Layers, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -15,6 +16,31 @@ export default function HomePage() {
     <div className="space-y-20 pb-10 pt-12 md:space-y-28 md:pt-16">
       <section className="section-shell grid items-center gap-10 lg:grid-cols-[1.1fr_1fr]">
         <MotionReveal>
+          <div className="inline-flex max-w-full items-center gap-4 rounded-[1.75rem] border border-line bg-[linear-gradient(180deg,rgba(19,27,35,0.88),rgba(8,12,17,0.96))] px-4 py-3 shadow-panel">
+            <div className="rounded-2xl border border-line bg-[#0a1015] p-2 shadow-metal">
+              <Image
+                src="/brand/hyroglyphx-logo-icon.png"
+                alt="HyroGlyphX icon"
+                width={72}
+                height={72}
+                className="h-10 w-10 object-contain"
+                priority
+              />
+            </div>
+            <div className="min-w-0">
+              <Image
+                src="/brand/hyroglyphx-logo-lockup.png"
+                alt="HyroGlyphX"
+                width={926}
+                height={221}
+                className="h-8 w-auto max-w-full object-contain object-left md:h-10"
+                priority
+              />
+              <p className="mt-1 text-[11px] uppercase tracking-[0.2em] text-textMuted">
+                Hardware-first intelligence
+              </p>
+            </div>
+          </div>
           <p className="inline-flex items-center gap-2 rounded-full border border-line bg-panel/80 px-3 py-1 text-xs uppercase tracking-[0.16em] text-accent">
             <Sparkles className="h-3.5 w-3.5" /> Adaptive Input for the Next Generation of Computing
           </p>
@@ -38,6 +64,21 @@ export default function HomePage() {
             {heroStats.map((stat) => (
               <MetricCard key={stat.label} label={stat.label} value={stat.value} />
             ))}
+          </div>
+
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            <div className="rounded-2xl border border-line bg-[linear-gradient(180deg,rgba(10,18,23,0.95),rgba(6,10,14,0.98))] p-4 shadow-metal">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-accent">Brand Signature</p>
+              <p className="mt-2 text-sm leading-relaxed text-textMuted">
+                New HyroGlyphX identity applied as a metallic mark system with restrained teal signal accents.
+              </p>
+            </div>
+            <div className="rounded-2xl border border-line bg-[linear-gradient(180deg,rgba(10,18,23,0.95),rgba(6,10,14,0.98))] p-4 shadow-metal">
+              <p className="text-[11px] uppercase tracking-[0.18em] text-accent">Platform Direction</p>
+              <p className="mt-2 text-sm leading-relaxed text-textMuted">
+                GlyphX hardware, GlyphOS software, and developer tooling framed as one coherent premium ecosystem.
+              </p>
+            </div>
           </div>
         </MotionReveal>
 
