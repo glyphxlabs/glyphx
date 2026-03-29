@@ -8,10 +8,10 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 md:grid-cols-3 md:px-8">
         <div>
           <Image
-            src="/brand/hyroglyphx-logo-lockup.png"
+            src="/brand/logo-lockup-white.svg"
             alt="HyroGlyphX logo"
-            width={926}
-            height={221}
+            width={925}
+            height={218}
             className="h-11 w-auto object-contain object-left"
           />
           <p className="mt-2 max-w-sm text-sm text-textMuted">

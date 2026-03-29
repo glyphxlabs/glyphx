@@ -13,10 +13,10 @@ export default function BusinessPage() {
           <div>
             <p className="text-xs uppercase tracking-[0.18em] text-accent">Executive Surface</p>
             <Image
-              src="/brand/hyroglyphx-logo-lockup.png"
+              src="/brand/logo-lockup.svg"
               alt="HyroGlyphX logo"
-              width={926}
-              height={221}
+              width={925}
+              height={218}
               className="mt-3 h-11 w-auto object-contain object-left md:h-14"
             />
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-textMuted">
@@ -26,7 +26,7 @@ export default function BusinessPage() {
           </div>
           <div className="rounded-2xl border border-line bg-[#0a1117] p-4 shadow-metal">
             <Image
-              src="/brand/hyroglyphx-logo-icon.png"
+              src="/brand/logo-icon.svg"
               alt="HyroGlyphX icon"
               width={128}
               height={128}

@@ -19,7 +19,7 @@ export default function HomePage() {
           <div className="inline-flex max-w-full items-center gap-4 rounded-[1.75rem] border border-line bg-[linear-gradient(180deg,rgba(19,27,35,0.88),rgba(8,12,17,0.96))] px-4 py-3 shadow-panel">
             <div className="rounded-2xl border border-line bg-[#0a1015] p-2 shadow-metal">
               <Image
-                src="/brand/hyroglyphx-logo-icon.png"
+                src="/brand/logo-icon.svg"
                 alt="HyroGlyphX icon"
                 width={72}
                 height={72}
@@ -29,10 +29,10 @@ export default function HomePage() {
             </div>
             <div className="min-w-0">
               <Image
-                src="/brand/hyroglyphx-logo-lockup.png"
+                src="/brand/logo-lockup.svg"
                 alt="HyroGlyphX"
-                width={926}
-                height={221}
+                width={925}
+                height={218}
                 className="h-8 w-auto max-w-full object-contain object-left md:h-10"
                 priority
               />
@@ -83,7 +83,7 @@ export default function HomePage() {
         </MotionReveal>
 
         <MotionReveal delay={0.08}>
-          <DeviceFrame />
+          <DeviceFrame variant="premium" priority />
         </MotionReveal>
       </section>
 

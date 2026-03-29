@@ -19,26 +19,21 @@ export function Navbar() {
         <Link href="/" className="flex items-center gap-3" aria-label="HyroGlyphX home">
           <div className="grid h-10 w-10 place-items-center rounded-2xl border border-line bg-[#0a1119] shadow-metal">
             <Image
-              src="/brand/hyroglyphx-logo-icon.png"
+              src="/brand/logo-icon.svg"
               alt="HyroGlyphX icon"
               width={64}
               height={64}
               className="h-7 w-7 object-contain"
             />
           </div>
-          <div className="space-y-1">
-            <Image
-              src="/brand/hyroglyphx-logo-wordmark.png"
-              alt="HyroGlyphX"
-              width={360}
-              height={86}
-              className="h-6 w-auto object-contain object-left md:h-7"
-              priority
-            />
-            <p className="text-[10px] uppercase tracking-[0.18em] text-textMuted md:text-[11px]">
-              Adaptive Input Systems
-            </p>
-          </div>
+          <Image
+            src="/brand/logo-lockup-white.svg"
+            alt="HyroGlyphX"
+            width={925}
+            height={218}
+            className="h-6 w-auto max-w-[11rem] object-contain object-left md:h-7 md:max-w-none"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">

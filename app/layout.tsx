@@ -4,13 +4,27 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://hyroglyphx.com"),
   title: "HyroGlyphX | Adaptive Input Systems",
   description:
     "HyroGlyphX builds premium adaptive keyboards, intelligent input systems, and GlyphOS - the software platform for symbolic computing.",
+  openGraph: {
+    title: "HyroGlyphX | Adaptive Input Systems",
+    description:
+      "HyroGlyphX builds premium adaptive keyboards, intelligent input systems, and GlyphOS - the software platform for symbolic computing.",
+    images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: "HyroGlyphX product render" }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HyroGlyphX | Adaptive Input Systems",
+    description:
+      "HyroGlyphX builds premium adaptive keyboards, intelligent input systems, and GlyphOS - the software platform for symbolic computing.",
+    images: ["/twitter-image.png"]
+  },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" }
+      { url: "/icons/favicon.ico" },
+      { url: "/icons/favicon-32.png", sizes: "32x32", type: "image/png" }
     ],
     apple: [{ url: "/apple-icon.png", sizes: "256x256", type: "image/png" }]
   }

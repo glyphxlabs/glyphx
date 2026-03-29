@@ -12,7 +12,7 @@ export default function DeveloperPage() {
         <div className="grid gap-6 lg:grid-cols-[auto_1fr] lg:items-center">
           <div className="rounded-2xl border border-line bg-[#0a1117] p-4 shadow-metal">
             <Image
-              src="/brand/hyroglyphx-logo-icon.png"
+              src="/brand/logo-icon.svg"
               alt="HyroGlyphX icon"
               width={128}
               height={128}

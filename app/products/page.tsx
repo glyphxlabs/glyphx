@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { ProductCard } from "@/components/ui/product-card";
@@ -22,7 +23,26 @@ export default function ProductsPage() {
             </Button>
           </div>
         </div>
-        <DeviceFrame />
+        <div className="grid gap-4">
+          <DeviceFrame variant="lite" priority />
+          <div className="overflow-hidden rounded-2xl border border-line bg-[linear-gradient(180deg,rgba(17,24,33,0.9),rgba(7,10,15,0.98))] shadow-panel">
+            <div className="relative aspect-[16/9] bg-[#070a0f]">
+              <Image
+                src="/images/products/glyphx-mini.avif"
+                alt="GlyphX Mini product render"
+                fill
+                className="object-contain p-4 md:p-5"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#070a0f] via-transparent to-transparent" />
+              <div className="absolute bottom-4 left-4 right-4 rounded-xl border border-white/10 bg-black/45 p-3 backdrop-blur">
+                <p className="text-xs uppercase tracking-[0.16em] text-accent">GlyphX Mini</p>
+                <p className="mt-1 text-sm text-textMuted">
+                  A compact adaptive keyboard concept for tighter desks, travel rigs, and streamlined command surfaces.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="grid gap-6 lg:grid-cols-3">
